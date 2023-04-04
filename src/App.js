@@ -1,5 +1,6 @@
 import './index.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import NavBar from './NavBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ArticleListPage from './pages/ArticleListPage';
@@ -9,9 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app bg-purple-100 ">
-        <h1 className="text-3xl bg-purple-500 shadow-md flex justify-center font-bold ">
-          My Awesome App
-        </h1>
+        {/* <h1 className="text-xl bg-purple-500 shadow-md flex justify-center font-bold ">
+          
+        </h1> */}
+        <NavBar />
         <div className="page-body">
           <Routes>
             <Route path="/" element={<HomePage />} />
